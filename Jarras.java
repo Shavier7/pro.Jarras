@@ -12,7 +12,13 @@ public class Jarras {
 			this.capacidad=capacidadInicial;
 		}
 	//metodos
-		
+	//D1
+		public void llenaDesde(Jarra j){
+			while((this.cantidad<this.capacidad)&&(j.cantidad>0)){
+				this.cantidad++;
+				j.cantidad--;
+			} ;
+
 		
 		
 	public void metodoComunitario(){
