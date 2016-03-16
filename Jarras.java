@@ -29,6 +29,10 @@ public class Jarras {
 						a.contenido-=x;
 					}
 				}
+				
+				public String toString(){
+					return "Jarra("+this.capacidad+","+this.contenido+")";
+				}
 
 		
 		
