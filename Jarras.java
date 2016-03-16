@@ -11,6 +11,7 @@ public class Jarras {
 			}
 			this.capacidad=capacidadInicial;
 		}
+
 	//metodos 1
 		//B1
 		public int capacidad(){
@@ -21,7 +22,16 @@ public class Jarras {
 			return this.cantidad;
 		}
 
-	
+	//metodos 2
+		
+		//C1
+		public void llena(){
+			this.cantidad=this.capacidad;
+		}	
+		//C2
+		public void vacia(){
+			this.cantidad=0;
+		}
 		
 		
 	public void metodoComunitario(){
