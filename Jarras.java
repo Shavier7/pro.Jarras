@@ -12,6 +12,10 @@ public class Jarras {
 			this.capacidad=capacidadInicial;
 		}
 	//metodos
+		public int capacidad(){
+			return this.capacidad;
+		}
+
 	
 		
 		
