@@ -12,7 +12,24 @@ public class Jarras {
 			this.capacidad=capacidadInicial;
 		}
 	//metodos
-		
+		//D
+		public void llenaDesde(Jarra a){
+			 int x;
+			
+			if(a.contenido>(this.capacidad-this.contenido)){
+				a.contenido-=(this.capacidad-this.contenido);
+				this.llena();
+			}else if(a.contenido<(this.capacidad-this.contenido)){
+				this.contenido+=a.contenido;
+				a.vacia();
+			} else{
+				x=this.contenido;
+				this.contenido+=a.contenido;
+				x=this.contenido-x;
+				a.contenido-=x;
+			}
+		}
+
 		
 		
 	public void metodoComunitario(){
