@@ -32,6 +32,31 @@ public class Jarras {
 		public void vacia(){
 			this.cantidad=0;
 		}
+
+	//metodos 3
+
+		//D1
+				public void llenaDesde(Jarra a){
+					 int x;
+					
+					if(a.contenido>(this.capacidad-this.contenido)){
+						a.contenido-=(this.capacidad-this.contenido);
+						this.llena();
+					}else if(a.contenido<(this.capacidad-this.contenido)){
+						this.contenido+=a.contenido;
+						a.vacia();
+					} else{
+						x=this.contenido;
+						this.contenido+=a.contenido;
+						x=this.contenido-x;
+						a.contenido-=x;
+					}
+				}
+
+		//D2
+				public String toString(){
+					return "Jarra("+this.capacidad+","+this.contenido+")";
+				}
 		
 		
 	public void metodoComunitario(){
