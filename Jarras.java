@@ -18,6 +18,10 @@ public class Jarras {
 			this.cantidad=this.capacidad;
 		}
 	
+		//C2
+		public void vacia(){
+			this.cantidad=0;
+		}
 		
 		
 	public void metodoComunitario(){
